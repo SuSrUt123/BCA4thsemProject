@@ -1,0 +1,36 @@
+# ===============================
+# Admin Panel Security
+# ===============================
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect hidden files (like .env or .htaccess itself)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect sensitive configuration files
+<FilesMatch "(connect|config)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect deletion scripts - Secure versions are now implemented
+# Uncomment below to block old insecure delete scripts if they exist
+# <FilesMatch "^delete_(menu|users|orders|restaurant|category)_OLD\.php$">
+#     Order deny,allow
+#     Deny from all
+# </FilesMatch>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always append X-Frame-Options SAMEORIGIN
+    Header set X-Content-Type-Options nosniff
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Disable server signature to hide Apache version
+ServerSignature Off

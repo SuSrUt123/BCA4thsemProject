@@ -1,0 +1,18 @@
+# ===============================
+# Upload Folder Security
+# ===============================
+
+# Disable PHP execution
+php_flag engine off
+
+# Only allow image files to be accessed
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Deny everything else
+<FilesMatch "^.*$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

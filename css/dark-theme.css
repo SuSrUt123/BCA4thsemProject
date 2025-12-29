@@ -1,0 +1,431 @@
+/* ==========================
+*   Dark/Black Theme Override
+*   Replacing blue/purple with elegant black theme
+============================*/
+
+/* Replace all gradients with dark gradient */
+[style*="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"],
+[style*="linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%)"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Replace all #667eea colors with dark */
+[style*="color: #667eea"],
+[style*="color:#667eea"] {
+    color: #2c3e50 !important;
+}
+
+[style*="background: #667eea"],
+[style*="background:#667eea"] {
+    background: #2c3e50 !important;
+}
+
+[style*="border-color: #667eea"],
+[style*="border-color:#667eea"],
+[style*="border: 2px solid #667eea"] {
+    border-color: #2c3e50 !important;
+}
+
+/* Update shadow colors to dark */
+[style*="box-shadow"][style*="102, 126, 234"] {
+    box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3) !important;
+}
+
+/* Focus states */
+input:focus,
+textarea:focus,
+.form-control:focus {
+    border-color: #2c3e50 !important;
+    box-shadow: 0 0 0 4px rgba(44, 62, 80, 0.1) !important;
+}
+
+/* Buttons */
+button[style*="linear-gradient"],
+input[type="submit"][style*="linear-gradient"],
+a[style*="linear-gradient"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+button:hover[style*="linear-gradient"],
+input[type="submit"]:hover[style*="linear-gradient"],
+a:hover[style*="linear-gradient"] {
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.6) !important;
+}
+
+/* Links */
+a[style*="color: #667eea"],
+a[style*="color:#667eea"] {
+    color: #2c3e50 !important;
+}
+
+a:hover[style*="color: #667eea"],
+a:hover[style*="color:#667eea"] {
+    color: #34495e !important;
+}
+
+/* Icons */
+i[style*="color: #667eea"],
+.fa[style*="color: #667eea"] {
+    color: #2c3e50 !important;
+}
+
+/* Restaurant cards */
+.restaurant-card:hover {
+    border-color: #2c3e50 !important;
+    box-shadow: 0 12px 40px rgba(44, 62, 80, 0.25) !important;
+}
+
+.restaurant-card:hover .entry-logo {
+    box-shadow: 0 12px 30px rgba(44, 62, 80, 0.4) !important;
+}
+
+.restaurant-card h3 a:hover {
+    color: #2c3e50 !important;
+}
+
+.restaurant-card .btn:hover {
+    box-shadow: 0 6px 25px rgba(44, 62, 80, 0.5) !important;
+}
+
+/* Table headers */
+thead[style*="background: linear-gradient"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Widget headers */
+.widget-cart .widget-heading {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Hero sections */
+.inner-page-hero [style*="linear-gradient"] {
+    background: rgba(30, 42, 56, 0.95) !important;
+}
+
+/* Badges */
+span[style*="background: linear-gradient(135deg, #667eea"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Focus visible */
+*:focus-visible {
+    outline: 3px solid rgba(44, 62, 80, 0.5) !important;
+}
+
+/* Price colors */
+[style*="color: #667eea"] {
+    color: #2c3e50 !important;
+}
+
+/* Background colors */
+[style*="background: #f8f9ff"] {
+    background: #ecf0f1 !important;
+}
+
+[style*="border: 2px solid #667eea"] {
+    border-color: #2c3e50 !important;
+}
+
+/* Login page specific */
+.login-left-side [style*="linear-gradient"] {
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(52, 73, 94, 0.95) 100%) !important;
+}
+
+/* Registration page header */
+.widget > div:first-child[style*="linear-gradient"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Hover states */
+*:hover [style*="color: #667eea"] {
+    color: #2c3e50 !important;
+}
+
+/* Update all box shadows */
+[style*="box-shadow"][style*="102, 126, 234"] {
+    box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3) !important;
+}
+
+/* Additional dark theme elements */
+.restaurant-card [style*="background: #f8f9ff"] {
+    background: #ecf0f1 !important;
+}
+
+/* Ensure consistency across all interactive elements */
+button:hover,
+input[type="submit"]:hover,
+a.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Dark theme for badges */
+span[style*="background: #e8f5e9"] {
+    background: #d5e8d4 !important;
+}
+
+span[style*="background: #fff3e0"] {
+    background: #ffe6cc !important;
+}
+
+/* Maintain good contrast for text */
+[style*="background: linear-gradient(135deg, #2c3e50"] {
+    color: white !important;
+}
+
+/* Ensure buttons remain visible and attractive */
+.btn[style*="linear-gradient"] {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================
+*   Top Links Section - Dark Theme
+============================*/
+
+/* Fix alignment and colors for top links */
+.top-links {
+    background: #1e2a38;
+    padding: 20px 0;
+}
+
+.top-links .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-links .link-item {
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.top-links .link-item span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.top-links .link-item.active span {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #3d4f5d !important;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.top-links .link-item a {
+    color: #ecf0f1;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.top-links .link-item.active a {
+    color: white;
+}
+
+.top-links .link-item:hover span {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.top-links .link-item:hover a {
+    color: white;
+}
+
+/* Add connecting line between steps - DISABLED */
+.top-links .link-item:not(:last-child)::after {
+    display: none !important;
+}
+
+.top-links .link-item.active:not(:last-child)::after {
+    display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-links .link-item {
+        padding: 10px 5px;
+    }
+    
+    .top-links .link-item span {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    
+    .top-links .link-item a {
+        font-size: 12px;
+    }
+    
+    .top-links .link-item:not(:last-child)::after {
+        display: none;
+    }
+}
+
+/* Fix hero section gradient that's still blue/purple */
+.inner-page-hero [style*="rgba(102, 126, 234"] {
+    background: rgba(30, 42, 56, 0.95) !important;
+}
+
+
+/* ==========================
+*   Dishes/Menu Page - Dark Theme Fixes
+============================*/
+
+/* Fix hero section gradient on dishes page */
+.inner-page-hero [style*="rgba(102, 126, 234, 0.9)"] {
+    background: rgba(30, 42, 56, 0.95) !important;
+}
+
+/* Fix cart widget header */
+.widget-cart .widget-heading[style*="linear-gradient"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Fix price colors */
+.price[style*="color: #667eea"],
+strong[style*="color: #667eea"] {
+    color: #2c3e50 !important;
+}
+
+/* Fix menu icon color */
+.fa-cutlery[style*="color: #667eea"] {
+    color: #2c3e50 !important;
+}
+
+/* Fix menu toggle link */
+a.btn-link[style*="color: #667eea"] {
+    color: #2c3e50 !important;
+}
+
+/* Fix food item hover effects */
+.food-item[onmouseover*="#667eea"] {
+    transition: all 0.3s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2) !important;
+    border-color: #2c3e50 !important;
+}
+
+/* Fix food item title hover */
+.food-item h6 a:hover {
+    color: #2c3e50 !important;
+}
+
+/* Fix Add to Cart button */
+input[type="submit"][value="Add To Cart"],
+.btn[style*="linear-gradient(135deg, #667eea"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+    box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3) !important;
+}
+
+input[type="submit"][value="Add To Cart"]:hover,
+.btn[style*="linear-gradient(135deg, #667eea"]:hover {
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.5) !important;
+}
+
+/* Fix checkout button */
+a[href*="checkout.php"][style*="linear-gradient"] {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+a[href*="checkout.php"]:hover {
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5) !important;
+}
+
+/* Ensure all inline styled elements get dark theme */
+[style*="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+[style*="box-shadow"][style*="rgba(102, 126, 234"] {
+    box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3) !important;
+}
+
+/* Fix menu widget */
+.menu-widget .widget-heading {
+    background: white !important;
+}
+
+.menu-widget .widget-title i {
+    color: #2c3e50 !important;
+}
+
+/* Responsive fixes for dishes page */
+@media (max-width: 991px) {
+    .widget-cart {
+        position: relative !important;
+        top: 0 !important;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ==========================
+*   Fix Restaurant Profile Section Positioning
+============================*/
+
+/* Bring the profile section down - it's too high */
+.inner-page-hero .profile {
+    padding: 100px 0 80px 0 !important;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+/* Center the content vertically */
+.inner-page-hero .profile .container {
+    margin-top: 40px;
+}
+
+/* Adjust profile image positioning */
+.profile-img .image-wrap {
+    margin-top: 20px !important;
+}
+
+/* Better spacing for restaurant info */
+.profile-desc .right-text {
+    padding-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .inner-page-hero .profile {
+        padding: 80px 0 60px 0 !important;
+        min-height: 300px;
+    }
+    
+    .inner-page-hero .profile .container {
+        margin-top: 20px;
+    }
+    
+    .profile-img .image-wrap {
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .inner-page-hero .profile {
+        padding: 60px 0 40px 0 !important;
+        min-height: 250px;
+    }
+    
+    .profile-desc .right-text h2 {
+        font-size: 28px !important;
+    }
+}

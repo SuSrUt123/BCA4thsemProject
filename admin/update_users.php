@@ -173,7 +173,7 @@ if(isset($_POST['submit'] ))
                             </ul>
                         </li>
 						 <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
-                         <li> <a href="billing_info.php"><i class="fa fa-file-invoice" aria-hidden="true"></i><span>Billing Info</span></a></li>
+                         <li> <a href="billing_info.php"><i class="fa fa-money" aria-hidden="true"></i><span>Billing Info</span></a></li>
 						
                          
                     </ul>

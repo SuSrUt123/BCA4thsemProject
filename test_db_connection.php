@@ -48,5 +48,6 @@ echo "<li>Create a database named '<strong>quickbites</strong>' in phpMyAdmin</l
 echo "<li>Import the SQL file: <code>DATABASE FILE/quickbites.sql</code></li>";
 echo "<li>Refresh this page to test the connection</li>";
 echo "<li>Delete this test file when done: <code>test_db_connection.php</code></li>";
+echo "<li><strong>Project URL:</strong> <code>http://localhost/quick-bites/</code></li>";
 echo "</ol>";
 ?>

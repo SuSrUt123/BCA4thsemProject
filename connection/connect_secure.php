@@ -9,7 +9,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "onlinefoodphp";
+$dbname = "quickbites";
 
 // Create connection with error handling
 try {

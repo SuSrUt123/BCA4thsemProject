@@ -64,7 +64,7 @@ session_start();
                     </ul>
                 </div>
             </div>
-            <div class="inner-page-hero bg-image" data-image-src="images/footer_pattern.png" style="position: relative; padding: 80px 0; overflow: hidden; background: url('images/footer_pattern.png'); background-size: cover; background-position: center;">
+            <div class="inner-page-hero bg-image" data-image-src="images/menu-bg.jpg" style="position: relative; padding: 80px 0; overflow: hidden; background: url('images/menu-bg.jpg'); background-size: cover; background-position: center;">
                 <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(30, 42, 56, 0.95);"></div>
                 <div class="container" style="position: relative; z-index: 1;">
                     <div class="text-center" style="animation: fadeInDown 0.6s ease;">
@@ -76,7 +76,7 @@ session_start();
                 </div>
             </div>
             
-            <section class="restaurants-page" style="padding: 60px 0; background: #f8f9fa;">
+            <section class="restaurants-page" style="padding: 60px 0;">
                 <div class="container">
                     <!-- Page Header -->
                     <div class="row mb-4">

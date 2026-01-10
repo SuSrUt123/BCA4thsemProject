@@ -3,6 +3,66 @@
 *   Replacing blue/purple with elegant black theme
 ============================*/
 
+/* ==========================
+*   Navigation Bar - Consistent Dark Theme
+============================*/
+
+/* Apply consistent dark theme to navigation */
+.navbar {
+    background-image: url("../images/menu-bg.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
+}
+
+/* Add dark overlay to navbar */
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 42, 56, 0.95);
+    z-index: 1;
+}
+
+/* Ensure navbar content appears above overlay */
+.navbar .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Ensure navbar links are visible */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: white !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Navbar brand/logo styling */
+.navbar-brand {
+    position: relative;
+    z-index: 3;
+}
+
+/* Navbar toggler for mobile */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    position: relative;
+    z-index: 3;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
 /* Replace all gradients with dark gradient */
 [style*="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"],
 [style*="linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%)"] {
@@ -183,10 +243,31 @@ span[style*="background: #fff3e0"] {
 *   Top Links Section - Dark Theme
 ============================*/
 
-/* Fix alignment and colors for top links */
+/* Apply same pattern background as navigation bar */
 .top-links {
-    background: #1e2a38;
+    background: url('../images/menu-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
     padding: 20px 0;
+}
+
+/* Add dark overlay to match navigation bar exactly */
+.top-links::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 42, 56, 0.95);
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.top-links .container {
+    position: relative;
+    z-index: 2;
 }
 
 .top-links .links {
@@ -196,6 +277,8 @@ span[style*="background: #fff3e0"] {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
+    z-index: 2;
 }
 
 .top-links .link-item {
@@ -427,5 +510,341 @@ a[href*="checkout.php"]:hover {
     
     .profile-desc .right-text h2 {
         font-size: 28px !important;
+    }
+}
+
+/* ==========================
+*   Consistent Dark Theme for Restaurant Section
+============================*/
+
+/* Apply dark theme background to restaurants page section */
+.restaurants-page {
+    background: url('../images/footer_pattern.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
+}
+
+/* Add dark overlay to match nav bar theme */
+.restaurants-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 42, 56, 0.95);
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.restaurants-page .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Update restaurant cards for dark theme */
+.restaurants-page .restaurant-card {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.restaurants-page .restaurant-card:hover {
+    background: rgba(255, 255, 255, 1) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Update page header for dark theme */
+.restaurants-page .mb-4 > .col-12 > div {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Ensure text remains readable */
+.restaurants-page h3,
+.restaurants-page .restaurant-card h3,
+.restaurants-page .restaurant-card h3 a {
+    color: #333 !important;
+}
+
+/* Update restaurant count badge */
+.restaurants-page span[style*="background: url"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+    color: white !important;
+}
+
+/* ==========================
+*   Featured Restaurants Section - Dark Theme
+============================*/
+
+/* Apply dark theme to featured restaurants section on homepage */
+.featured-restaurants {
+    background: url('../images/footer_pattern.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
+    padding: 80px 0 !important;
+}
+
+/* Add dark overlay to match navigation bar exactly */
+.featured-restaurants::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 42, 56, 0.95);
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.featured-restaurants .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Update section title for dark theme */
+.featured-restaurants .title-block h4 {
+    color: white !important;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Update filter navigation for dark theme */
+.featured-restaurants .restaurants-filter nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.featured-restaurants .restaurants-filter nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featured-restaurants .restaurants-filter nav ul li a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.featured-restaurants .restaurants-filter nav ul li a:hover,
+.featured-restaurants .restaurants-filter nav ul li a.selected {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.15);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Update restaurant cards in featured section */
+.featured-restaurants .restaurant-wrap {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px !important;
+    padding: 25px !important;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featured-restaurants .restaurant-wrap:hover {
+    background: rgba(255, 255, 255, 1) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.featured-restaurants .restaurant-wrap h5 a {
+    color: #333 !important;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.featured-restaurants .restaurant-wrap h5 a:hover {
+    color: #2c3e50 !important;
+}
+
+.featured-restaurants .restaurant-wrap span {
+    color: #666 !important;
+    font-size: 14px;
+}
+
+.featured-restaurants .restaurant-logo img {
+    border-radius: 8px !important;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.featured-restaurants .restaurant-wrap:hover .restaurant-logo img {
+    border-color: #2c3e50;
+    transform: scale(1.05);
+}
+
+/* Update ratings and other elements */
+.featured-restaurants .ratings span i {
+    color: #2c3e50 !important;
+}
+
+.featured-restaurants .cost,
+.featured-restaurants .mins,
+.featured-restaurants .ratings {
+    color: #666 !important;
+}
+
+/* Responsive adjustments for dark theme */
+@media (max-width: 768px) {
+    .featured-restaurants {
+        padding: 60px 0 !important;
+    }
+    
+    .featured-restaurants .title-block,
+    .featured-restaurants .restaurants-filter {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    
+    .featured-restaurants .restaurants-filter nav ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .featured-restaurants {
+        padding: 40px 0 !important;
+    }
+    
+    .featured-restaurants .restaurant-wrap {
+        padding: 20px !important;
+        text-align: center;
+    }
+    
+    .featured-restaurants .restaurants-filter nav ul li a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive adjustments for dark theme */
+@media (max-width: 768px) {
+    .restaurants-page,
+    .featured-restaurants {
+        padding: 40px 0 !important;
+    }
+    
+    .featured-restaurants .title-block,
+    .featured-restaurants .restaurants-filter {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================
+*   Popular Dishes Section - Dark Theme
+============================*/
+
+/* Apply dark theme to popular dishes section */
+.popular {
+    background: url('../images/footer_pattern.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
+    padding: 80px 0 !important;
+}
+
+/* Add dark overlay to match navigation bar */
+.popular::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 42, 56, 0.95);
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.popular .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Update section title for dark theme */
+.popular .title h2 {
+    color: white !important;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.popular .title .lead {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Update food item cards for dark theme */
+.popular .food-item-wrap {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.popular .food-item-wrap:hover {
+    background: rgba(255, 255, 255, 1) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.popular .food-item-wrap h5 a {
+    color: #333 !important;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.popular .food-item-wrap h5 a:hover {
+    color: #2c3e50 !important;
+}
+
+.popular .food-item-wrap .product-name {
+    color: #666 !important;
+}
+
+.popular .food-item-wrap .price {
+    color: #2c3e50 !important;
+    font-weight: 700;
+}
+
+/* Update order button */
+.popular .theme-btn-dash {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.popular .theme-btn-dash:hover {
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.5) !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for popular section */
+@media (max-width: 768px) {
+    .popular {
+        padding: 60px 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .popular {
+        padding: 40px 0 !important;
     }
 }
